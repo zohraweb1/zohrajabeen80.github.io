@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="logo">
+               <h1>Fun<span>flix</span></h1>
+            </div>
+            <div class="anchor">
+               <ul>
+                   <li id="home"><a href="/homes.html">Home</a></li>
+                   <li><a href="/homes.html#tv_shows">Tv Shows</a></li>
+                   <li><a href="/homes.html#upcoming_movies">Movies</a></li>
+                   <li><a href="/homes.html#popular_movies">New & Popular</a></li>
+                   <li><a href="/download.html">Downloads</a></li>
+               </ul>
+            </div>
+            <div class="icons">
+               <div class="search">
+                <input type="text" placeholder="Search here" class="type">
+               <div class="icon">
+                   <i class="fa-solid fa-magnifying-glass"></i> 
+               </div>
+            </div>
+            <div class="bell">
+               <i class="fa-solid fa-bell"></i>
+            </div>
+             <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">L</button>
+                <div id="sub_menu_wrap" class="dropdown_content">
+                   <div class="sab_menu">
+                       <div class="user">
+                           <h1>L</h1>
+                           <h2>Lakshna</h2>
+                           <h2>Parmar</h2>
+                           <p>lashknaparmar@gmail.com</p>
+                       </div>
+                       <hr>
+                       <div class="links">
+                           <i class="fa-solid fa-user"></i> 
+                           <a href="#"><p>Edit Profile</p></a>
+                       </div>
+                       <div class="links">
+                           <i class="fa-solid fa-gear"></i>        
+                           <a href="/setting_privacy.html"><p>Settings & Privacy</p></a>
+                       </div>
+                       <div class="links">
+                           <i class="fa-solid fa-circle-question"></i>
+                           <a href="/help_support.html"><p>Help & Support</p></a>
+                       </div>
+                       <div class="links">
+                           <i class="fa-solid fa-right-from-bracket"></i>
+                           <a href="/login_confirm.html"><p>Logout</p></a>
+                       </div>
+                       </div> 
+                   </div>
+               </div>
+           </nav>
+           <!-- navbar complete -->
+           <div class="profile-cont">
+            <div class="profile-pic">
+                <img src="/Assets/images/team-4.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-details">
+                <h1 class="usernames">Lakshna Parmar</h1>
+                <i class="fa-solid fa-camera"></i>
+                <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eros in nisl ullamcorper tristique.</p>
+                <div class="favorite-genres">
+                    <h2>Favorite Genres:</h2>
+                    <ul>
+                        <li>Action</li>
+                        <li>Comedy</li>
+                        <li>Sci-Fi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- profile already create end -->
+        <!-- profile edit changes start -->
+        <div class="edit-profile-container">
+            <h1>Edit Profile</h1>
+            <form id="edit-profile-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" class="edits" name="username" required>
+                
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" rows="2"></textarea>
+                
+                <label for="favorite-genres">Favorite Genres:</label>
+                <input type="text" id="favorite-genres" class="edits" name="favorite-genres">
+                
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </section>
+        <!-- start footer -->
+        <div class="footer">
+            <div class="col_1">
+                <h3>USEFULL LINKS</h3>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">contact</a>
+                <a href="#">Jobs</a>
+            </div>
+            <div class="col_2">
+                <h3>NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder=" Your Email Address" required ><br>
+                    <button type="submit">SUBSCRIBE NOW</button>
+                </form>
+            </div>
+            <div class="col_3">
+                <h3>CONTACT</h3>
+                <p>123,xyz road<br>lee market ,liyari</p>
+                <div class="social_icons">
+                    <a href="https://www.linkedin.com/in/lakshna-parmar-b127052a4/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/LakshnaParmar/100-Days-Web-Development/tree/master/Assignment"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="down">
+              <a href="#home"><i class="fa-solid fa-circle-chevron-up"></i></a>
+            </div>
+        </div>
+        <!-- footer end -->
+        <div class="created">
+            <h5>Created By Error Less</h5>
+        </div>
+        <!--  created footer end -->  
+    <script src="function.js"></script>
+</body>
+</html>
